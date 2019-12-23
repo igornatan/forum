@@ -1,0 +1,10 @@
+com/maxi/forum/controller/dto/TopicoDto.class
+com/maxi/forum/controller/HelloController.class
+com/maxi/forum/models/Curso.class
+com/maxi/forum/models/Topico.class
+com/maxi/forum/repository/TopicoRepository.class
+com/maxi/forum/ForumApplication.class
+com/maxi/forum/models/StatusTopico.class
+com/maxi/forum/models/Usuario.class
+com/maxi/forum/controller/TopicosController.class
+com/maxi/forum/models/Resposta.class

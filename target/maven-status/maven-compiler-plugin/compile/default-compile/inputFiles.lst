@@ -1,0 +1,10 @@
+/home/igornatan/Workspace/forum/src/main/java/com/maxi/forum/models/Usuario.java
+/home/igornatan/Workspace/forum/src/main/java/com/maxi/forum/models/Topico.java
+/home/igornatan/Workspace/forum/src/main/java/com/maxi/forum/controller/HelloController.java
+/home/igornatan/Workspace/forum/src/main/java/com/maxi/forum/models/Curso.java
+/home/igornatan/Workspace/forum/src/main/java/com/maxi/forum/models/Resposta.java
+/home/igornatan/Workspace/forum/src/main/java/com/maxi/forum/ForumApplication.java
+/home/igornatan/Workspace/forum/src/main/java/com/maxi/forum/repository/TopicoRepository.java
+/home/igornatan/Workspace/forum/src/main/java/com/maxi/forum/controller/dto/TopicoDto.java
+/home/igornatan/Workspace/forum/src/main/java/com/maxi/forum/models/StatusTopico.java
+/home/igornatan/Workspace/forum/src/main/java/com/maxi/forum/controller/TopicosController.java
