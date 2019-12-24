@@ -1,6 +1,7 @@
 package com.maxi.forum.controller;
 
 import com.maxi.forum.controller.form.TopicoForm;
+import com.maxi.forum.controller.dto.DetailsTopicoDto;
 import com.maxi.forum.controller.dto.TopicoDto;
 import com.maxi.forum.models.Topico;
 import com.maxi.forum.repository.CursoRepository;
@@ -8,6 +9,7 @@ import com.maxi.forum.repository.TopicoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -38,7 +40,6 @@ public class TopicosController {
             List<Topico> topicos = topicoRepository.findByCursoNome(nomeCurso);
             return TopicoDto.converter(topicos);
         }
-
     }
 
     @PostMapping
@@ -48,6 +49,12 @@ public class TopicosController {
 
         URI uri = uriBuilder.path("/topicos/{id}").buildAndExpand(topico.getId()).toUri();
         return ResponseEntity.created(uri).body(new TopicoDto(topico));
+    }
+
+    @GetMapping("/{id}")
+    public DetailsTopicoDto getDetails(@PathVariable Long id){
+        Topico topico = topicoRepository.getOne(id);
+        return new DetailsTopicoDto(topico);
     }
 
 }
